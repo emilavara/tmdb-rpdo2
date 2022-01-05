@@ -1,30 +1,64 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+  <div>
+    <router-view/>
+    <Footer/>
   </div>
-  <router-view/>
+  
 </template>
 
+<script>
+import Footer from '@/components/Footer.vue'
+
+
+export default {
+  name: 'App',
+  components: {
+    Footer
+  }
+}
+</script>
+
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+@import './css/grid-system.css';
+@import './css/variables.css';
+@import './css/animate.min.css'; /* animate.css */
+
+body {
+    background: var(--bgColor);
+    font-family: 'SF Pro', -apple-system;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 200px;
+    min-height: 100vh;
+}
+body::-webkit-scrollbar {
+    width: 5px;
 }
 
-#nav {
-  padding: 30px;
+body::-webkit-scrollbar-track {
+    background: var(--bgColor);
+    border-radius: 10px;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+body::-webkit-scrollbar-thumb {
+    background: var(--accentColor);
+    border-radius: 10px;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+
+* {
+    box-sizing: border-box;
 }
+
+a {
+    text-decoration: none;
+}
+
+.bg-red {
+    background: red;
+}
+
 </style>

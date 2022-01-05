@@ -1,0 +1,396 @@
+/* griddy.css by emil avara */
+/* now in display: grid */
+/* rem = pixel / base size (if no base size is defined, it defaults to 16 pixels */
+
+:root {
+    --baseSize: 16px;
+    
+    /* grid container widths */
+    --small: 36rem; /* 576px */
+    --medium: 48rem; /* 768px */
+    --large: 62rem; /* 992px */
+    --xlarge: 75rem; /* 1200px */
+    --xxlarge: 88rem; /* 1408px */
+  
+    /* breakpoints */
+    --tablet: 768px;
+  
+    /* columns */
+    --columns: 12;
+  
+    /* gutters */
+    --gutters: 60px;
+    --vertical-gutter: 20px;
+    --horizontal-gutter: 20px;
+  
+    /* margins */
+    --marginMultiplier: 20px;
+    --marginLeftMultiplier: 20px;
+    --marginRightMultiplier: 20px;
+    --marginTopMultiplier: 20px;
+    --marginBottomMultiplier: 20px;
+  
+    /* paddings */
+    --paddingMultiplier: 20px;
+    --paddingLeftMultiplier: 20px;
+    --paddingRightMultiplier: 20px;
+    --paddingTopMultiplier: 20px;
+    --paddingBottomMultiplier: 20px;
+  }
+  
+  html {
+    font-size: var(--baseSize);
+  }
+  
+  .grid-container-s,
+  .grid-container-m,
+  .grid-container-lg,
+  .grid-container-xl,
+  .grid-container-xxl,
+  .grid-container-fluid {
+    margin: auto;
+  }
+  
+  .grid-container-fluid {
+    max-width: 80%;
+  }
+  
+  .grid-container-s {
+    max-width: var(--small);
+  }
+  
+  .grid-container-m {
+    max-width: var(--medium);
+  }
+  
+  .grid-container-lg {
+    max-width: var(--large);
+  }
+  
+  .grid-container-xl {
+    max-width: var(--xlarge);
+  }
+  
+  .grid-container-xxl {
+    max-width: var(--xxlarge);
+  }
+  
+  .grid-row {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+  }
+  
+  .grid-row-auto {
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    grid-template-rows: auto;
+    grid-auto-flow: dense;
+  }
+  
+  .gs-x {
+    grid-column: span auto;
+  }
+  
+  .gs-1 {
+    grid-column: span 1;
+  }
+  
+  .gs-2 {
+    grid-column: span 2;
+  }
+  
+  .gs-3 {
+    grid-column: span 3;
+  }
+  
+  .gs-4 {
+    grid-column: span 4;
+  }
+  
+  .gs-5 {
+    grid-column: span 5;
+  }
+  
+  .gs-6 {
+    grid-column: span 6;
+  }
+  
+  .gs-7 {
+    grid-column: span 7;
+  }
+  
+  .gs-8 {
+    grid-column: span 8;
+  }
+  
+  .gs-9 {
+    grid-column: span 9;
+  }
+  
+  .gs-10 {
+    grid-column: span 10;
+  }
+  
+  .gs-11 {
+    grid-column: span 11;
+  }
+  
+  .gs-12 {
+    grid-column: span 12;
+  }
+  
+  .rs-1 {
+    grid-row: span 1;
+  }
+  
+  .rs-2 {
+    grid-row: span 2;
+  }
+  
+  .rs-3 {
+    grid-row: span 3;
+  }
+  
+  .rs-4 {
+    grid-row: span 4;
+  }
+  
+  .rs-5 {
+    grid-row: span 5;
+  }
+  
+  .rs-6 {
+    grid-row: span 6;
+  }
+  
+  .rs-7 {
+    grid-row: span 7;
+  }
+  
+  .rs-8 {
+    grid-row: span 8;
+  }
+  
+  .rs-9 {
+    grid-row: span 9;
+  }
+  
+  .rs-10 {
+    grid-row: span 10;
+  }
+  
+  .rs-11 {
+    grid-row: span 11;
+  }
+  
+  .rs-12 {
+    grid-row: span 12;
+  }
+  
+  /* spacing */
+  .m-10 {
+    margin: calc(var(--marginMultiplier) * 1);
+  }
+  
+  .mt-10 {
+    margin-top: 10px;
+  }
+  
+  .mb-50 {
+    margin-bottom: 50px;
+  }
+  
+  .mb-10 {
+    margin-bottom: 10px;
+  }
+  
+  .mt-30 {
+    margin-top: 30px;
+  }
+  
+  .pt-30 {
+    padding-top: 30px;
+  }
+  
+  .pl-50 {
+    padding-left: 20px;
+  }
+  
+  .pt-100 {
+    padding-top: 100px;
+  }
+  
+  .ptb-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .ptb-35 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+  
+  .pt-35 {
+    padding-top: 35px;
+  }
+  
+  .pb-35 {
+    padding-bottom: 35px;
+  }
+  
+  .pb-50 {
+    padding-bottom: 50px;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .align-start {
+    align-items: flex-start;
+  }
+  
+  .align-end {
+    align-items: flex-end;
+  }
+  
+  .align-stretch {
+    align-items: stretch;
+  }
+  
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  
+  .justify-around {
+    justify-content: space-around;
+  }
+  
+  .justify-between {
+    justify-content: space-between;
+  }
+  
+  .justify-evenly {
+    justify-content: space-evenly;
+  }
+  
+  .justify-center {
+    justify-content: center;
+  }
+  
+  .g-20 {
+    gap: var(--gutters)
+  }
+  
+  @media only screen and (max-width: 768px) {
+    html {
+      font-size: 14px;
+    }
+    /* collapse columns into rows */
+    
+    .grid-container-s,
+    .grid-container-m,
+    .grid-container-lg,
+    .grid-container-xl,
+    .grid-container-xxl,
+    .grid-container-fluid {
+      width: 90%;
+    }
+  
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+  
+    .gs-1,
+    .gs-2,
+    .gs-3,
+    .gs-4,
+    .gs-5,
+    .gs-6,
+    .gs-7,
+    .gs-8,
+    .gs-9,
+    .gs-10,
+    .gs-11,
+    .gs-12 {
+        grid-column: span 12;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1366px) {
+    html {
+      font-size: 1.17vw;
+    }
+  }
+  
+  /* @media only screen and (min-width: 1366px) {
+  
+    .grid-container-s {
+      max-width: calc(var(--small) + 10%);
+  }
+  .grid-container-m {
+      max-width: calc(var(--medium) + 10%);
+  }
+  .grid-container-l {
+      max-width: calc(var(--large) + 10%);
+  }
+  .grid-container-xl {
+      max-width: calc(var(--xlarge) + 10%);
+  }
+  .grid-container-xxl {
+      max-width: calc(var(--xxlarge) + 10%);
+  }
+  }
+  
+  @media only screen and (min-width: 1920px) {
+    .grid-container-s {
+        max-width: calc(var(--small) + 20%);
+    }
+    .grid-container-m {
+        max-width: calc(var(--medium) + 20%);
+    }
+    .grid-container-l {
+        max-width: calc(var(--large) + 20%);
+    }
+    .grid-container-xl {
+        max-width: calc(var(--xlarge) + 20%);
+    }
+    .grid-container-xxl {
+        max-width: calc(var(--xxlarge) + 20%);
+    }
+  }
+  
+  @media only screen and (min-width: 2560px) {
+    .grid-container-s {
+        max-width: calc(var(--small) + 40%);
+    }
+    .grid-container-m {
+        max-width: calc(var(--medium) + 40%);
+    }
+    .grid-container-l {
+        max-width: calc(var(--large) + 40%);
+    }
+    .grid-container-xl {
+        max-width: calc(var(--xlarge) + 40%);
+    }
+    .grid-container-xxl {
+        max-width: calc(var(--xxlarge) + 40%);
+    }
+  }
+  
+  @media only screen and (min-width: 3840px) {
+  
+  } */

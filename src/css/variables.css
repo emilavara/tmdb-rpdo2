@@ -1,0 +1,24 @@
+:root {
+    --bgColor: #081D25;
+    --accentColor: #64D98A;
+    --otherColor: #0C232D;
+    --fontHeavy: 800;
+    --otherShadow: 0px 9px 15px -6px rgba(12,35,45,0.29);
+    --accentShadow: 0px 9px 15px -6px rgba(100,217,138,0.29);
+}
+
+.accentText {
+    color: var(--accentColor);
+}
+
+.bigText {
+    font-size: 80px;
+    font-weight: var(--fontHeavy);
+    color: var(--accentColor);
+}
+
+.grayText {
+    color: white;
+    opacity: 0.2;;
+    font-size: 18px;
+}
