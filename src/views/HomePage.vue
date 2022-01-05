@@ -1,4 +1,5 @@
 <template>
+<div>
 <NavAlt/>
     <div>
         <div class="blob">
@@ -16,6 +17,7 @@
         <TrendingMovies/>
         <TopRated/>
     </div>
+</div>
 </template>
 
 <script>

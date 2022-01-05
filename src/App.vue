@@ -23,10 +23,11 @@ export default {
 @import './css/grid-system.css';
 @import './css/variables.css';
 @import './css/animate.min.css'; /* animate.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
     background: var(--bgColor);
-    font-family: 'SF Pro', -apple-system;
+    font-family: 'Inter', -apple-system;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;

@@ -1,4 +1,5 @@
 <template>
+<div>
 <Nav/>
 <div class="animate__animated animate__fadeInUp wrapper">
     <div id="trailer-modal" v-if="show" v-on:click="show = false">
@@ -32,6 +33,7 @@
     <Actors/>
     <TrendingMovies v-on:click="reloadPage()"/>
     
+</div>
 </div>
 </template>
 

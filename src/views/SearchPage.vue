@@ -1,9 +1,11 @@
 <template>
+<div>
 <Nav/>
     <div>
         <SearchResult/>
 
     </div>
+</div>
 </template>
 
 <script>
