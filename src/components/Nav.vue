@@ -4,7 +4,7 @@
             <router-link to="/"><div class="big-text">TMDb</div></router-link>
             <div class="form-hamburger-container">
             <form @submit="searchMovies()" class="search-form">
-                <input type="text" v-model="search" id="" class="search-bar" placeholder="search flyx...">
+                <input type="text" v-model="search" id="" class="search-bar" placeholder="Search Movies...">
             </form>
             
                 <img class="hamburger-menu" src="../img/hamburger.svg">

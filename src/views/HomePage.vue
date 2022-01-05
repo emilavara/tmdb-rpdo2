@@ -11,7 +11,7 @@
         </div>
         <div class="form-container animate__animated animate__fadeInUp">
             <form @submit.prevent="searchMovies()" class="search-box">
-                <input type="text" v-model="search" id="" class="search-box" placeholder="search flyx...">
+                <input type="text" v-model="search" id="" class="search-box" placeholder="Search Movies...">
             </form>
         </div>
         <TrendingMovies/>
