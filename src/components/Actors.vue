@@ -96,4 +96,14 @@ export default {
     font-size: 16px;
     font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+    .section-title {
+        margin-bottom: 20px;
+    }
+    .actor-container {
+        margin: 10px auto;
+        width: 80%;
+    }
+}
 </style>

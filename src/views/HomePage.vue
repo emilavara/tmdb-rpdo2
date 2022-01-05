@@ -108,6 +108,9 @@ button:focus {
 
 
 @media only screen and (max-width: 600px) {
+    .text-container {
+        margin-top: 150px;
+    }
     .search-box {
         width: 300px;
     }

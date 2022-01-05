@@ -1,5 +1,6 @@
 <template>
     <div>
+        <div class="blob"><img src="../img/blobs.svg"></div>
         <nav>
             <router-link to="/"><div class="big-text">TMDb</div></router-link>    
             <img class="hamburger-menu" src="../img/hamburger.svg">
@@ -19,6 +20,10 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 20px 60px;
+}
+
+.blob {
+    display: none;
 }
 
 .big-text {
@@ -66,5 +71,31 @@ button:focus {
 
 .hamburger-menu {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-box {
+        width: 300px;
+    }
+    
+    .movie-wrapper {
+        width: 126vw;
+    }
+
+    .blob {
+        display: block;
+        position: absolute;
+        top: -130px;
+        left: -130px;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        top: 20px;
+    }
+
+    .big-text {
+        display: none;
+    }
 }
 </style>

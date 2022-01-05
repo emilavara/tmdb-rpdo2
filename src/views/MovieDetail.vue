@@ -266,5 +266,9 @@ export default {
     .movie-overview {
         margin-top: 80px;
     }
+    
+    .movie-details {
+        height: auto;
+    }
 }
 </style>

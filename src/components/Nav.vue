@@ -90,4 +90,38 @@ button:focus {
 .hamburger-menu {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 600px) {
+    nav {
+        justify-content: space-evenly;
+        margin: 20px 0px;
+    }
+    .search-box {
+        width: 300px;
+    }
+    
+    .movie-wrapper {
+        width: 126vw;
+    }
+
+    .blob {
+        display: block;
+        position: absolute;
+        top: -130px;
+        left: -130px;
+    }
+
+    .search-bar {
+        width: 180px;
+    }
+
+    .hamburger-menu {
+        position: relative;
+        top: 0px;
+    }
+
+    .big-text {
+        font-size: 28px;
+    }
+}
 </style>
